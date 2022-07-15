@@ -14,12 +14,6 @@ class CustumButton extends StatelessWidget {
       padding: const EdgeInsets.all(18),
       child: ElevatedButton(
         onPressed: onPress,
-        child: Text(
-          text,
-          style: TextStyle(
-            fontSize: 20,
-          ),
-        ),
         style: ElevatedButton.styleFrom(
           primary: buttonColor,
           minimumSize: const Size(
@@ -28,6 +22,12 @@ class CustumButton extends StatelessWidget {
           ),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(32),
+          ),
+        ),
+        child: Text(
+          text,
+          style: const TextStyle(
+            fontSize: 20,
           ),
         ),
       ),
